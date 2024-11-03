@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { addAllFavorites, removeFavorite } from "../../utility";
-import Heading from "../../Components/Heading";
+
 import Card from "../../Components/Card";
-import { useLocation } from "react-router-dom";
+
 
 
 const Dashboard = () => {

@@ -16,11 +16,11 @@ if(categoryId){
 setCoffees(filterCoffee)
 }
 
-// else{
+else{
     
-//     setCoffees(data.slice (0,6))
+    setCoffees(data.slice(0,6))
    
-// }
+}
 
 // setCoffees(data.slice (0,2))
   },[categoryId,data])
