@@ -11,6 +11,7 @@ import Home from './assets/Pages/Home.jsx';
 import Coffees from './assets/Pages/Coffees.jsx';
 import Dashboard from './assets/Pages/Dashboard.jsx';
 import CoffeeCards from './Components/CoffeeCards.jsx';
+import CoffeeDetails from './assets/Pages/CoffeeDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -43,7 +44,12 @@ const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <Dashboard></Dashboard>,
-      }
+      },
+      {
+        path: '/coffee/:id',
+        element:<CoffeeDetails></CoffeeDetails> ,
+        loader:()=> fetch('../coffees.json')
+      },
     ]
   },
 ]);
